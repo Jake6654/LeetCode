@@ -9,6 +9,7 @@
 I use a recursive DFS
 The key idea is that we keep going left until there's no left child.
 And when a node has no left child, it is the moment we record its value
+Because in order traversal requires the entire left subtree to be processed before the current node
 """
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
